@@ -67,6 +67,10 @@ var specialFile = function(url, res)
 		res.end("Key Printed");
 		console.log(key);
 	}
+	if(url == "ping"){
+		res.writeHead(200, {'Content-type': 'text/html'});
+		res.end("pong");
+	}
 
 }
 
